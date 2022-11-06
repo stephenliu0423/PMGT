@@ -26,12 +26,14 @@ We have uploaded the pre-trained representations of items for video game dataset
 ### Testing on Recommendation Task
 Using the pre-trained representations of items.
 ` $ python run_rec.py --data_type video --pretrain 1 --lr 0.001 --l2_re 0`
+
 Using the randomly initialized representations of items.
 ` $ python run_rec.py --data_type video --pretrain 0 --lr 0.001 --l2_re 0`
 
 ### Testing on CTR Prediction Task
 Using the pre-trained representations of items.
 ` $ python run_ctr.py --data_type_video --pretrain 1 --lr 0.001 --l2_re 0.0001 `
+
 Using the randomly initialized representations of items.
 ` $ python run_ctr.py --data_type_video --pretrain 0 --lr 0.001 --l2_re 0.0001 `
 
