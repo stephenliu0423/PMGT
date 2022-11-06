@@ -21,7 +21,7 @@ To run the code, you need the following dependencies
 
 ## Quick Validation
 
-We have uploaded the pre-trained representations of items in the video game dataset, you can run the codes of downstream tasks directly.
+The pre-trained representations of items in the video game dataset can be downloaded from [here](https://drive.google.com/file/d/1u9GmGizdsDe8FheYK6idflCpEy2WkVij/view?usp=share_link). Please move the unzipped files to the folder 'data/video/', and then run the codes of downstream tasks directly.
 
 ### Testing on Recommendation Task
 Using the pre-trained item representations.  
@@ -39,16 +39,18 @@ Using the randomly initialized item representations.
 
 ## Example of Running The Codes
 ### Data Preprocessing
-[Amazon Review Datasets](https://nijianmo.github.io/amazon/index.html)
+The experimental datasets are collected from the [Amazon Review Datasets](https://nijianmo.github.io/amazon/index.html).
 - Video Games
 - Toys and Games
 - Tools and Home Improvement
 
-Using the original data to build the pre-training graph dataset and downstream dataset.  
+Using the original data to build the pre-training graph dataset and downstream task dataset.  
 ` $ python data_process.py `
 
+Note that the experimental datasets used in the original paper are processed based on some internal APIs. Thus, there exist some difference between the following experimental statistics and the statistics reported in the original paper.  
 
-### Stats
+
+### Statistics of Experimental Datasets
 
 <table>
   <tr>
