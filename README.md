@@ -1,4 +1,3 @@
-##PMGT
 This is the implementation of PMGT described in the paper: "[Pre-training Graph Transformer with Multimodal Side Information for Recommendation](https://doi.org/10.1145/3474085.3475709)" (In ACM MM2021)
 
 
