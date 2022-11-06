@@ -1,4 +1,4 @@
-This is the implementation of PMGT described in the paper: "[Pre-training Graph Transformer with Multimodal Side Information for Recommendation](https://doi.org/10.1145/3474085.3475709)" (In ACM MM2021)
+This is the implementation of PMGT described in the paper: "[Pre-training Graph Transformer with Multimodal Side Information for Recommendation](https://doi.org/10.1145/3474085.3475709)" (In ACM MM2021).
 
 
 ## Environment
@@ -21,20 +21,20 @@ To run the code, you need the following dependencies
 
 ## Quick Validation
 
-We have uploaded the pre-trained representations of items for video game dataset, you can run the codes of downstream tasks directly.
+We have uploaded the pre-trained representations of items in the video game dataset, you can run the codes of downstream tasks directly.
 
 ### Testing on Recommendation Task
-Using the pre-trained representations of items.  
+Using the pre-trained item representations.  
 ` $ python run_rec.py --data_type video --pretrain 1 --lr 0.001 --l2_re 0`
 
-Using the randomly initialized representations of items.
+Using the randomly initialized item representations.  
 ` $ python run_rec.py --data_type video --pretrain 0 --lr 0.001 --l2_re 0`
 
 ### Testing on CTR Prediction Task
-Using the pre-trained representations of items.
+Using the pre-trained item representations.  
 ` $ python run_ctr.py --data_type_video --pretrain 1 --lr 0.001 --l2_re 0.0001 `
 
-Using the randomly initialized representations of items.  
+Using the randomly initialized item representations.   
 ` $ python run_ctr.py --data_type_video --pretrain 0 --lr 0.001 --l2_re 0.0001 `
 
 ## Example of Running The Codes
@@ -44,7 +44,7 @@ Using the randomly initialized representations of items.
 - Toys and Games
 - Tools and Home Improvement
 
-Using the original data to build pre-training graph dataset and downstream dataset.  
+Using the original data to build the pre-training graph dataset and downstream dataset.  
 ` $ python data_process.py `
 
 
@@ -70,7 +70,7 @@ Using the original data to build pre-training graph dataset and downstream datas
     <td style="text-align:center">6,551</td>
     <td style="text-align:center">98,278</td>
     <td style="text-align:center">7,252</td>
-    <td style="text-align:center">88,606*2</td>
+    <td style="text-align:center">88,606</td>
     <td style="text-align:center">3</td>
   </tr>
   <tr>
@@ -79,7 +79,7 @@ Using the original data to build pre-training graph dataset and downstream datas
     <td style="text-align:center">6,238</td>
     <td style="text-align:center">294,507</td>
     <td style="text-align:center">6,451</td>
-    <td style="text-align:center">15,363*2</td>
+    <td style="text-align:center">15,363</td>
     <td style="text-align:center">4</td>
   </tr>
   <tr>
@@ -88,11 +88,10 @@ Using the original data to build pre-training graph dataset and downstream datas
     <td style="text-align:center">5,751</td>
     <td style="text-align:center">431,455</td>
     <td style="text-align:center">5,982</td>
-    <td style="text-align:center">12,927*2</td>
+    <td style="text-align:center">12,927</td>
     <td style="text-align:center">3</td>
   </tr>
 </table>
-
 
 
 ### Pre-training
