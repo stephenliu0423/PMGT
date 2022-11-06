@@ -24,7 +24,7 @@ To run the code, you need the following dependencies
 We have uploaded the pre-trained representations of items for video game dataset, you can run the codes of downstream tasks directly.
 
 ### Testing on Recommendation Task
-Using the pre-trained representations of items.
+Using the pre-trained representations of items.  
 ` $ python run_rec.py --data_type video --pretrain 1 --lr 0.001 --l2_re 0`
 
 Using the randomly initialized representations of items.
@@ -34,7 +34,7 @@ Using the randomly initialized representations of items.
 Using the pre-trained representations of items.
 ` $ python run_ctr.py --data_type_video --pretrain 1 --lr 0.001 --l2_re 0.0001 `
 
-Using the randomly initialized representations of items.
+Using the randomly initialized representations of items.  
 ` $ python run_ctr.py --data_type_video --pretrain 0 --lr 0.001 --l2_re 0.0001 `
 
 ## Example of Running The Codes
@@ -44,7 +44,7 @@ Using the randomly initialized representations of items.
 - Toys and Games
 - Tools and Home Improvement
 
-Using the original data to build pre-training graph dataset and downstream dataset.
+Using the original data to build pre-training graph dataset and downstream dataset.  
 ` $ python data_process.py `
 
 
@@ -96,13 +96,13 @@ Using the original data to build pre-training graph dataset and downstream datas
 
 
 ### Pre-training
-#### Pre-training PMGT
+#### Pre-training PMGT  
 ` $ python main.py --data_type video --is_train 1`
 
-#### Saving Item Representations Pre-trained by PMGT
+#### Saving Item Representations Pre-trained by PMGT  
 ` $ python main.py --data_type video --is_train 0`
 
-### Testing on Downstream Tasks
+### Testing on Downstream Tasks  
 See the detailed in Quick Validation
 
 ### Experiment Results 
